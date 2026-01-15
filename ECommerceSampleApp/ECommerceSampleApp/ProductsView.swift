@@ -12,24 +12,33 @@ struct ProductsView: View {
     @EnvironmentObject var cart: CartModel
 
     var body: some View {
-        NavigationView {
-            VStack {
-                List(viewModel.products) { product in
-                    NavigationLink {
-                        ProductDetailView(product: product)
-                            .cart(cart)
-                    } label: {
-                        HStack(spacing: 20) {
-                            Image(product.image)
-                                .resizable()
-                                .aspectRatio(320 / 180, contentMode: .fit)
-                                .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
-                            Text(product.description)
+        if viewModel.isLoading {
+            ProgressView()
+        } else {
+            NavigationView {
+                VStack {
+                    List(viewModel.products) { product in
+                        NavigationLink {
+                            ProductDetailView(product: product)
+                                .cart(cart)
+                        } label: {
+                            HStack(spacing: 20) {
+                                Image(product.image)
+                                    .resizable()
+                                    .aspectRatio(320 / 180, contentMode: .fit)
+                                    .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
+                                Text(product.description)
+                            }
                         }
+                        .focusable()
+                        #if os(tvOS)
+                        .hoverEffect(.lift)
+                        #endif
                     }
-                    .buttonStyle(.borderless)
-                    .focusable()
                 }
+                #if os(tvOS)
+                .frame(height: 1080) // size in pts, not px, so it works for both 2K and 4K TV sets
+                #endif
             }
         }
     }
