@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "8f4e95b6-8522-41c0-aac4-b3643dcec172",
+      "sku": "89498498",
+      "name": "Balloons",
+      "description": "Multicolor balloons in neon frame",
+      "image": "balloons-01"
+    },
+    {
+      "id": "6fafdcc3-917d-4f5b-ac42-c0bd7d4f83be",
+      "sku": "89415584",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-01"
+    },
+    {
+      "id": "c825b22e-aa8d-49fa-beab-25baafbc17b8",
+      "sku": "49132518",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-02"
+    },
+    {
+      "id": "3e70b081-57dd-4b41-9083-02942edb8503",
+      "sku": "09856155",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-03"
+    },
+    {
+      "id": "6bc52e74-2743-486c-9fdc-4758ae2607b3",
+      "sku": "089489498",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-04"
+    },
+    {
+      "id": "71e7dea6-c229-4cfd-a3f1-7f226dcf8412",
+      "sku": "0569849848",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-05"
+    },
+    {
+      "id": "319ee42d-210a-48ba-b1d8-70726044f230",
+      "sku": "0589148894",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-06"
+    },
+    {
+      "id": "db38d2b8-54de-4cdc-a3d4-fc504c9cdacc",
+      "sku": "898749841",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-07"
+    },
+    {
+      "id": "5867b8fe-e401-4440-9349-82194fe98a83",
+      "sku": "198416598",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-08"
+    },
+    {
+      "id": "91919a13-f122-45a3-ac30-417f3fce3a83",
+      "sku": "196456894",
+      "name": "Cosmetics",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "cosmetics-09"
+    },
+    {
+      "id": "12e8105b-acd9-485a-abea-5773c3947703",
+      "sku": "984198484",
+      "name": "Design Item",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "design-item-01"
+    },
+    {
+      "id": "6b3b3c6e-0860-4076-bd65-bfc8f7d0a7d2",
+      "sku": "198645189",
+      "name": "Plasma",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "plasma-01"
+    },
+    {
+      "id": "edb0726a-786d-4ea2-b81c-55af177cf99c",
+      "sku": "945165108",
+      "name": "Plasma",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "plasma-02"
+    },
+    {
+      "id": "05bf29b0-40cb-4839-87a7-abab0f6f1610",
+      "sku": "984106541",
+      "name": "Plasma",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "plasma-03"
+    },
+    {
+      "id": "b3356865-7015-435b-a1ce-6637e0d9571e",
+      "sku": "849775114",
+      "name": "Plasma",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+      "image": "wood-01"
+    }
+  ]
+}

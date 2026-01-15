@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF69B7572F190C6C00B96AA7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF69B7562F190C6C00B96AA7 /* Configuration.plist */; };
+		FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FFFEA6C92F19733A00F4E9BC /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		FF69B7372F19098B00B96AA7 /* ECommerceSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7412F19098B00B96AA7 /* ECommerceSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7562F190C6C00B96AA7 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		FFFEA6C92F19733A00F4E9BC /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +82,7 @@
 		FF69B71F2F19098A00B96AA7 = {
 			isa = PBXGroup;
 			children = (
+				FFFEA6C92F19733A00F4E9BC /* data.json */,
 				FF69B7562F190C6C00B96AA7 /* Configuration.plist */,
 				FF69B72A2F19098A00B96AA7 /* ECommerceSampleApp */,
 				FF69B73A2F19098B00B96AA7 /* ECommerceSampleAppTests */,
@@ -218,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */,
 				FF69B7572F190C6C00B96AA7 /* Configuration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +429,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TARGETED_DEVICE_FAMILY = "1,3";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
@@ -470,14 +474,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TARGETED_DEVICE_FAMILY = "1,3";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
