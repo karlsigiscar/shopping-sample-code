@@ -49,11 +49,13 @@ struct ProductDetailView: View {
             }
             #endif
 
-            Button {
-                cart.addProduct(product)
-            } label: {
-                Label("Add to cart", systemImage: "cart.badge.plus")
-                    .font(.system(size: 50))
+            if !cart.contains(product) {
+                Button {
+                    cart.addProduct(product)
+                } label: {
+                    Label("Add to cart", systemImage: "cart.badge.plus")
+                        .font(.system(size: 50))
+                }
             }
             
             if cart.contains(product) {

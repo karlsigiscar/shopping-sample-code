@@ -28,9 +28,6 @@ struct CartView: View {
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
                                 Text(item.product.description)
                             }
-                            Text("Quantity: \(String(item.quantity))")
-                                .font(.title2)
-                                .fontWeight(.bold)
                         }
                     }
                 }
