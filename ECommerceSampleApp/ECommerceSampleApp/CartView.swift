@@ -18,7 +18,7 @@ struct CartView: View {
             NavigationView {
                 VStack(spacing: 20) {
                     Text("Number of items in your cart: \(cart.numberOfItems)")
-                        .font(.title)
+                        .font(.title2)
                     List(cart.items) { item in
                         VStack(alignment: .trailing) {
                             HStack(spacing: 20) {
@@ -34,6 +34,7 @@ struct CartView: View {
                         }
                     }
                 }
+                .padding([.top], 20)
             }
         }
     }
