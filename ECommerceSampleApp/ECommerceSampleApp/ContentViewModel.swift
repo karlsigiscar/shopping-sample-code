@@ -8,30 +8,36 @@
 import Combine
 import Foundation
 
-/// Thread yielding used here.
+/// Thread yielding
 /// Since properties marked with the @Published property wrapper will be accessed by SwiftUI,
-/// we mark ContentViewModel with @MainActor to ensure it's accessed from the main queue
-/// Any async call in the view model will be executed on a background queue
+/// we mark ContentViewModel with @MainActor to ensure they are always accessed from the main queue.
+/// By contrast, any async call in the view model will be executed on a background queue.
 @MainActor
 class ContentViewModel: NSObject, ObservableObject {
     
     @Published public var products = [ProductModel]()
-
-    enum AppError: Error {
-        case configuration
-    }
+    @Published public var isLoading: Bool = false
+    
+    private var productsService = ProductService()
+    private var cancellables: Set<AnyCancellable> = []
     
     override init() {
+        super.init()
+        subscribe()
         do {
-            let configuration = try Configuration()
-            guard let products = configuration.products else {
-                throw AppError.configuration
-            }
-            self.products = products
+            try productsService.loadProducts()
+            isLoading = true
         }
         catch {
             // Show user facing initialization error
             print(error)
         }
+    }
+    
+    private func subscribe() {
+        productsService.$products.dropFirst().receive(on: DispatchQueue.main).sink { [weak self] products in
+            self?.products = products
+            self?.isLoading = false
+        }.store(in: &cancellables)
     }
 }

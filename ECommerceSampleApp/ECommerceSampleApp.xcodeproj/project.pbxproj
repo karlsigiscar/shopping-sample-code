@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF69B7572F190C6C00B96AA7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF69B7562F190C6C00B96AA7 /* Configuration.plist */; };
 		FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FFFEA6C92F19733A00F4E9BC /* data.json */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		FF69B7282F19098A00B96AA7 /* ECommerceSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7372F19098B00B96AA7 /* ECommerceSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7412F19098B00B96AA7 /* ECommerceSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF69B7562F190C6C00B96AA7 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		FFFEA6C92F19733A00F4E9BC /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				FFFEA6C92F19733A00F4E9BC /* data.json */,
-				FF69B7562F190C6C00B96AA7 /* Configuration.plist */,
 				FF69B72A2F19098A00B96AA7 /* ECommerceSampleApp */,
 				FF69B73A2F19098B00B96AA7 /* ECommerceSampleAppTests */,
 				FF69B7442F19098B00B96AA7 /* ECommerceSampleAppUITests */,
@@ -222,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */,
-				FF69B7572F190C6C00B96AA7 /* Configuration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
