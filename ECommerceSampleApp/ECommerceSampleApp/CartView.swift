@@ -20,9 +20,7 @@ struct CartView: View {
                     Text("Number of items in your cart: \(cart.numberOfItems)")
                         .font(.title)
                     List(cart.items) { item in
-                        NavigationLink {
-                            ProductDetailView(product: item.product)
-                        } label: {
+                        VStack(alignment: .trailing) {
                             HStack(spacing: 20) {
                                 Image(item.product.image)
                                     .resizable()
@@ -30,10 +28,10 @@ struct CartView: View {
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
                                 Text(item.product.description)
                             }
+                            Text("Quantity: \(String(item.quantity))")
+                                .font(.title2)
+                                .fontWeight(.bold)
                         }
-                        .buttonStyle(.borderless)
-                        .focusable()
-                        .hoverEffect(.lift)
                     }
                 }
             }

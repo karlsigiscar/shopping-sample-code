@@ -47,6 +47,7 @@ struct ProductDetailView: View {
             
             if cart.contains(product) {
                 Button {
+                    cart.removeProduct(product)
                 } label: {
                     Label("Remove from cart", systemImage: "cart.badge.minus")
                         .font(.system(size: 50))
