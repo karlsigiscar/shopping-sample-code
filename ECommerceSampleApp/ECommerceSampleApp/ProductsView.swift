@@ -29,7 +29,6 @@ struct ProductsView: View {
                     }
                     .buttonStyle(.borderless)
                     .focusable()
-                    .hoverEffect(.lift)
                 }
             }
         }
