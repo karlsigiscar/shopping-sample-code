@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>products</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>8f4e95b6-8522-41c0-aac4-b3643dcec172</string>
+			<key>sku</key>
+			<string>89498498</string>
+			<key>name</key>
+			<string>Balloons</string>
+			<key>description</key>
+			<string>Multicolor balloons in neon frame</string>
+			<key>image</key>
+			<string>balloons-01</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>6fafdcc3-917d-4f5b-ac42-c0bd7d4f83be</string>
+			<key>sku</key>
+			<string>89415584</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-01</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>c825b22e-aa8d-49fa-beab-25baafbc17b8</string>
+			<key>sku</key>
+			<string>49132518</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-02</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>3e70b081-57dd-4b41-9083-02942edb8503</string>
+			<key>sku</key>
+			<string>09856155</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-03</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>6bc52e74-2743-486c-9fdc-4758ae2607b3</string>
+			<key>sku</key>
+			<string>089489498</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-04</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>71e7dea6-c229-4cfd-a3f1-7f226dcf8412</string>
+			<key>sku</key>
+			<string>0569849848</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-05</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>319ee42d-210a-48ba-b1d8-70726044f230</string>
+			<key>sku</key>
+			<string>0589148894</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-06</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>db38d2b8-54de-4cdc-a3d4-fc504c9cdacc</string>
+			<key>sku</key>
+			<string>898749841</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-07</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>5867b8fe-e401-4440-9349-82194fe98a83</string>
+			<key>sku</key>
+			<string>198416598</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-08</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>91919a13-f122-45a3-ac30-417f3fce3a83</string>
+			<key>sku</key>
+			<string>196456894</string>
+			<key>name</key>
+			<string>Cosmetics</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>cosmetics-09</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>12e8105b-acd9-485a-abea-5773c3947703</string>
+			<key>sku</key>
+			<string>984198484</string>
+			<key>name</key>
+			<string>Design Item</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>design-item-01</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>6b3b3c6e-0860-4076-bd65-bfc8f7d0a7d2</string>
+			<key>sku</key>
+			<string>198645189</string>
+			<key>name</key>
+			<string>Plasma</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>plasma-01</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>edb0726a-786d-4ea2-b81c-55af177cf99c</string>
+			<key>sku</key>
+			<string>945165108</string>
+			<key>name</key>
+			<string>Plasma</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>plasma-02</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>05bf29b0-40cb-4839-87a7-abab0f6f1610</string>
+			<key>sku</key>
+			<string>984106541</string>
+			<key>name</key>
+			<string>Plasma</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>plasma-03</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>b3356865-7015-435b-a1ce-6637e0d9571e</string>
+			<key>sku</key>
+			<string>849775114</string>
+			<key>name</key>
+			<string>Plasma</string>
+			<key>description</key>
+			<string>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+			<key>image</key>
+			<string>wood-01</string>
+		</dict>
+	</array>
+</dict>
+</plist>
