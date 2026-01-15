@@ -15,8 +15,8 @@ import Foundation
 @MainActor
 class ContentViewModel: NSObject, ObservableObject {
     
-    @Published public var products = [ProductModel]()
     @Published public var isLoading: Bool = false
+    @Published public var products = [ProductModel]()
     
     private var productsService = ProductService()
     private var cancellables: Set<AnyCancellable> = []
@@ -29,7 +29,7 @@ class ContentViewModel: NSObject, ObservableObject {
             isLoading = true
         }
         catch {
-            // Show user facing initialization error
+            // FIXME: Show user facing initialization error
             print(error)
         }
     }

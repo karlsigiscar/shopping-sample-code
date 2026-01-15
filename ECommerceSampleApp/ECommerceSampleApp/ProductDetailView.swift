@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var cart: CartModel
     public var product: ProductModel
     
@@ -38,6 +39,16 @@ struct ProductDetailView: View {
     private func buttonsView() -> some View {
         HStack(spacing: 100) {
             
+            #if os(tvOS)
+            // We would not normally have this kind of button on Apple TV to navigate back, but this is just for this code sample
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Label("Back", systemImage: "lessthan")
+                    .font(.system(size: 50))
+            }
+            #endif
+
             Button {
                 cart.addProduct(product)
             } label: {
