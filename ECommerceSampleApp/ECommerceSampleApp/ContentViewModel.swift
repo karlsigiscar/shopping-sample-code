@@ -18,20 +18,16 @@ class ContentViewModel: NSObject, ObservableObject {
     @Published public var isLoading: Bool = false
     @Published public var products = [ProductModel]()
     
+    // Normally, I would have this property behind a ProductServiceProviding protocol to be able to mock it for unit tests
     private var productsService = ProductService()
+    
     private var cancellables: Set<AnyCancellable> = []
     
     override init() {
         super.init()
         subscribe()
-        do {
-            productsService.loadProducts()
-            isLoading = true
-        }
-        catch {
-            // FIXME: Show user facing initialization error
-            print(error)
-        }
+        productsService.loadProducts()
+        isLoading = true
     }
     
     private func subscribe() {

@@ -19,6 +19,9 @@ struct ProductDetailView: View {
                 .aspectRatio(320 / 180, contentMode: .fill)
                 .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
             VStack(spacing: 20) {
+                Text(product.priceString)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 Text(product.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)

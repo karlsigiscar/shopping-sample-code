@@ -8,11 +8,7 @@
 import Foundation
 import Combine
 
-protocol ProductServiceProviding {
-    func loadProducts()
-}
-
-class ProductService: NSObject, ObservableObject, ProductServiceProviding {
+class ProductService: NSObject, ObservableObject {
     
     enum AppError: Error {
         case configuration

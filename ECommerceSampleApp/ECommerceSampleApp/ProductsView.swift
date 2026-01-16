@@ -27,6 +27,8 @@ struct ProductsView: View {
                                     .resizable()
                                     .aspectRatio(320 / 180, contentMode: .fit)
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
+                                Text(product.priceString)
+                                    .font(.title3)
                                 Text(product.description)
                             }
                         }

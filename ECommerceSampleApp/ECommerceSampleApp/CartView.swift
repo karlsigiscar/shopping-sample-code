@@ -16,9 +16,19 @@ struct CartView: View {
                 .font(.largeTitle)
         } else {
             NavigationView {
-                VStack(spacing: 20) {
-                    Text("Number of items in your cart: \(cart.numberOfItems)")
-                        .font(.title2)
+                VStack(spacing: 30) {
+                    HStack {
+                        Text("Number of items in your cart: \(cart.numberOfItems)")
+                            #if os(tvOS)
+                            .font(.title2)
+                            #else
+                            .font(.subheadline)
+                            #endif
+                        Spacer()
+                        Text(cart.totalString)
+                            .font(.title2)
+                    }
+                    .padding([.leading, .trailing], 30)
                     List(cart.items) { item in
                         VStack(alignment: .trailing) {
                             HStack(spacing: 20) {
@@ -26,6 +36,8 @@ struct CartView: View {
                                     .resizable()
                                     .aspectRatio(320 / 180, contentMode: .fit)
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
+                                Text(item.product.priceString)
+                                    .font(.title3)
                                 Text(item.product.description)
                             }
                         }

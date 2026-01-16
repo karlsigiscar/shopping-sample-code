@@ -34,7 +34,13 @@ class CartModel: NSObject, ObservableObject {
     
     public func decreaseQuantity(_ item: CartItem) {
         if let cartItem = findItem(by: item.id) {
-            cartItem.quantity -= 1
+            if cartItem.quantity > 0 {
+                cartItem.quantity -= 1
+            }
+            
+            if cartItem.quantity == 0 {
+                removeProduct(item.product)
+            }
         }
     }
 
@@ -44,6 +50,14 @@ class CartModel: NSObject, ObservableObject {
     
     var numberOfItems: Int {
         items.reduce(into: 0) { $0 += $1.quantity }
+    }
+    
+    var total: Double {
+        items.reduce(into: 0) { $0 += $1.product.price * Double($1.quantity) }
+    }
+    
+    var totalString: String {
+        "Total: £\(String(Int(total)))" // Would normally depend on locale and local price data and use proper formatting
     }
     
     private func findItem(by id: String) -> CartItem? {
