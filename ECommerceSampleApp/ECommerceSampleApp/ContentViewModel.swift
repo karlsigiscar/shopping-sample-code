@@ -25,7 +25,7 @@ class ContentViewModel: NSObject, ObservableObject {
         super.init()
         subscribe()
         do {
-            try productsService.loadProducts()
+            productsService.loadProducts()
             isLoading = true
         }
         catch {

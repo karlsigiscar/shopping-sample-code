@@ -38,6 +38,7 @@ struct ProductsView: View {
                 }
                 #if os(tvOS)
                 .frame(height: 1080) // size in pts, not px, so it works for both 2K and 4K TV sets
+                .padding([.top], 160)
                 #endif
             }
         }

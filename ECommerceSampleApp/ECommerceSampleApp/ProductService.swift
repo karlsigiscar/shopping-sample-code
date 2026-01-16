@@ -8,7 +8,11 @@
 import Foundation
 import Combine
 
-class ProductService: NSObject, ObservableObject {
+protocol ProductServiceProviding {
+    func loadProducts()
+}
+
+class ProductService: NSObject, ObservableObject, ProductServiceProviding {
     
     enum AppError: Error {
         case configuration
@@ -17,7 +21,7 @@ class ProductService: NSObject, ObservableObject {
     @Published var products: [ProductModel] = []
     private var cancellables: Set<AnyCancellable> = []
     
-    public func loadProducts() throws {
+    public func loadProducts() {
         // This could be deserialized directly from the included data.json file, but instead, we download it from github for the sake of example
         // Likewise, images should be downloaded, but for the sake of example, they are just Image Resources from the Asset Catalog
         guard let url = URL(string: "https://raw.githubusercontent.com/karlsigiscar/shopping-sample-code/refs/heads/main/ECommerceSampleApp/data.json") else{
