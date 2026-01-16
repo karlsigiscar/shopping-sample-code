@@ -29,14 +29,30 @@ struct ProductDetailView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
             }
-            .padding([.top], 20)
+            .padding([.top], 100)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.white)
-        .overlay(alignment: .bottom) {
-            buttonsView()
-                .offset(x: 0, y: -40)
+        .overlay {
+            ZStack {
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+                    .mask {
+                        LinearGradient(
+                            stops: [
+                                .init(color: .white, location: 0.2),
+                                .init(color: .white.opacity(0.7), location: 0.4),
+                                .init(color: .white.opacity(0), location: 0.56),
+                                .init(color: .white.opacity(0), location: 0.7),
+                                .init(color: .white.opacity(0.25), location: 0.8)
+                            ],
+                            startPoint: .bottom, endPoint: .top
+                        )
+                    }
+                buttonsView()
+            }
         }
+        .ignoresSafeArea()
     }
     
     private func buttonsView() -> some View {
