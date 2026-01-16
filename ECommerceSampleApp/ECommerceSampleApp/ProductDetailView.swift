@@ -29,7 +29,11 @@ struct ProductDetailView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
             }
+            #if os(tvOS)
+            .padding([.top], 150)
+            #else
             .padding([.top], 100)
+            #endif
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.white)
