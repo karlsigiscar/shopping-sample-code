@@ -1,5 +1,5 @@
 //
-//  Configuration.swift
+//  ConfigurationResponse.swift
 //  ContinuityCamera
 //
 //  Created by Writer on 18/05/2025.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Configuration: Decodable {
+class ConfigurationResponse: Decodable {
     private(set) var products: [ProductModel]?
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF03B2552F1CF1F800BDF52C /* promotion.json in Resources */ = {isa = PBXBuildFile; fileRef = FF03B2542F1CF1F800BDF52C /* promotion.json */; };
 		FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FFFEA6C92F19733A00F4E9BC /* data.json */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF03B2542F1CF1F800BDF52C /* promotion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = promotion.json; sourceTree = "<group>"; };
 		FF69B7282F19098A00B96AA7 /* ECommerceSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7372F19098B00B96AA7 /* ECommerceSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69B7412F19098B00B96AA7 /* ECommerceSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				FFFEA6C92F19733A00F4E9BC /* data.json */,
+				FF03B2542F1CF1F800BDF52C /* promotion.json */,
 				FF69B72A2F19098A00B96AA7 /* ECommerceSampleApp */,
 				FF69B73A2F19098B00B96AA7 /* ECommerceSampleAppTests */,
 				FF69B7442F19098B00B96AA7 /* ECommerceSampleAppUITests */,
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF03B2552F1CF1F800BDF52C /* promotion.json in Resources */,
 				FFFEA6CA2F19733F00F4E9BC /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

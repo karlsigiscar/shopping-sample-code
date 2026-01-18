@@ -16,7 +16,12 @@ struct ProductModel: Identifiable, Sendable, Decodable {
     public var image: String
     public var price: Double
     
-    init(id: String, sku: String, name: String, description: String, image: String, price: Double) {
+    init(id: String, sku: String,
+         name: String,
+         description: String,
+         image: String,
+         price: Double
+    ) {
         self.id = id
         self.sku = sku
         self.name = name

@@ -26,7 +26,8 @@ class ContentViewModel: NSObject, ObservableObject {
     override init() {
         super.init()
         subscribe()
-        productsService.loadProducts()
+        productsService.loadPromotions()
+        productsService.loadProductsAndPromotions()
         isLoading = true
     }
     
