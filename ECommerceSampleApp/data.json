@@ -25,7 +25,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "cosmetics-02",
       "price": 154,
-      "discountInPercent": 0
+      "discountInPercent": 10
     },
     {
       "id": "3e70b081-57dd-4b41-9083-02942edb8503",
@@ -43,7 +43,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "cosmetics-04",
       "price": 28,
-      "discountInPercent": 0
+      "discountInPercent": 5
     },
     {
       "id": "71e7dea6-c229-4cfd-a3f1-7f226dcf8412",
@@ -88,7 +88,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "cosmetics-09",
       "price": 96,
-      "discountInPercent": 0
+      "discountInPercent": 15
     },
     {
       "id": "12e8105b-acd9-485a-abea-5773c3947703",
@@ -97,7 +97,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "design-item-01",
       "price": 78,
-      "discountInPercent": 0
+      "discountInPercent": 25
     },
     {
       "id": "6b3b3c6e-0860-4076-bd65-bfc8f7d0a7d2",
@@ -106,7 +106,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "plasma-01",
       "price": 74,
-      "discountInPercent": 0
+      "discountInPercent": 10
     },
     {
       "id": "edb0726a-786d-4ea2-b81c-55af177cf99c",
@@ -115,7 +115,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "plasma-02",
       "price": 59,
-      "discountInPercent": 0
+      "discountInPercent": 10
     },
     {
       "id": "05bf29b0-40cb-4839-87a7-abab0f6f1610",
@@ -124,7 +124,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "plasma-03",
       "price": 99,
-      "discountInPercent": 0
+      "discountInPercent": 20
     },
     {
       "id": "b3356865-7015-435b-a1ce-6637e0d9571e",
@@ -133,7 +133,7 @@
       "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
       "image": "wood-01",
       "price": 249,
-      "discountInPercent": 0
+      "discountInPercent": 30
     }
   ]
 }
