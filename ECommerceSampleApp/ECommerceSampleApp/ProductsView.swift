@@ -17,6 +17,8 @@ struct ProductsView: View {
         } else {
             NavigationView {
                 VStack {
+                    Text("SALE - UP to 60% OFF")
+                        .font(.title)
                     List(viewModel.products) { product in
                         NavigationLink {
                             ProductDetailView(product: product)
@@ -28,7 +30,7 @@ struct ProductsView: View {
                                     .aspectRatio(320 / 180, contentMode: .fit)
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
                                 Text(product.priceString)
-                                    .font(.title3)
+                                    .font(.subheadline)
                                 Text(product.description)
                             }
                         }

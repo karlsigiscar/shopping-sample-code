@@ -26,14 +26,13 @@ class ContentViewModel: NSObject, ObservableObject {
     override init() {
         super.init()
         subscribe()
-        productsService.loadPromotions()
-        productsService.loadProductsAndPromotions()
+        productsService.loadUserAndPromotions()
         isLoading = true
     }
     
     private func subscribe() {
         productsService.$products.dropFirst().receive(on: DispatchQueue.main).sink { [weak self] products in
-            self?.products = products
+            self?.products = products ?? []
             self?.isLoading = false
         }.store(in: &cancellables)
     }

@@ -15,12 +15,14 @@ struct ProductModel: Identifiable, Sendable, Decodable {
     public var description: String
     public var image: String
     public var price: Double
-    
+    public var discountInPercent: Int?
+
     init(id: String, sku: String,
          name: String,
          description: String,
          image: String,
-         price: Double
+         price: Double,
+         discountInPercent: Int
     ) {
         self.id = id
         self.sku = sku
@@ -28,6 +30,7 @@ struct ProductModel: Identifiable, Sendable, Decodable {
         self.description = description
         self.image = image
         self.price = price
+        self.discountInPercent = discountInPercent
     }
     
     func hash(into hasher: inout Hasher) {
@@ -35,6 +38,14 @@ struct ProductModel: Identifiable, Sendable, Decodable {
     }
     
     public var priceString: String {
-        "£\(Int(price))" // Would normally depend on locale and local price data and use proper formatting
+        // Would normally depend on locale and local price data and use proper formatting
+        "£\(Int(price) + (Int(price) * (discountInPercent ?? 0)) / 100) - \(discountString)"
+    }
+    
+    public var discountString: String {
+        if let discountInPercent = discountInPercent {
+            return "\(Int(discountInPercent))% OFF"
+        }
+        return ""
     }
 }
