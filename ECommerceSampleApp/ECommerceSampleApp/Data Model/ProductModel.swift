@@ -17,6 +17,7 @@ struct ProductModel: Identifiable, Sendable, Decodable {
     public var price: Double
     public var discountInPercent: Int?
     public var membersOnly: Bool
+    public var category: String
 
     init(id: String, sku: String,
          name: String,
@@ -24,7 +25,8 @@ struct ProductModel: Identifiable, Sendable, Decodable {
          image: String,
          price: Double,
          discountInPercent: Int,
-         membersOnly: Bool
+         membersOnly: Bool,
+         category: String
     ) {
         self.id = id
         self.sku = sku
@@ -34,6 +36,7 @@ struct ProductModel: Identifiable, Sendable, Decodable {
         self.price = price
         self.discountInPercent = discountInPercent
         self.membersOnly = membersOnly
+        self.category = category
     }
     
     func hash(into hasher: inout Hasher) {
