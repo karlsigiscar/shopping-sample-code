@@ -29,9 +29,11 @@ struct ProductsView: View {
                                     .resizable()
                                     .aspectRatio(320 / 180, contentMode: .fit)
                                     .containerRelativeFrame(.horizontal, count: 5, spacing: 40)
-                                Text(product.priceString)
-                                    .font(.subheadline)
-                                Text(product.description)
+                                VStack(alignment: .leading) {
+                                    Text(product.priceString)
+                                        .font(.subheadline)
+                                    Text(product.description)
+                                }
                             }
                         }
                         .focusable()
