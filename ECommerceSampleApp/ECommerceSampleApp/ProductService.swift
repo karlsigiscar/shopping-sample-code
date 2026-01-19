@@ -2,36 +2,13 @@
 //  ProductService.swift
 //  ECommerceSampleApp
 //
-//  Enhanced with Advanced Combine Patterns
+//  Created by Writer on 15/01/2026.
 //
-
 import Foundation
 import Combine
 
 class ProductService: NSObject, ObservableObject {
-    
-    // MARK: - Error Handling
-    
-    enum AppError: Error {
-        case configuration
-        case invalidURL
-        case networkFailure(Error)
-        case decodingFailure(Error)
-        case cacheExpired
-        case unauthorized
         
-        var localizedDescription: String {
-            switch self {
-            case .configuration: return "Configuration error"
-            case .invalidURL: return "Invalid URL"
-            case .networkFailure(let error): return "Network error: \(error.localizedDescription)"
-            case .decodingFailure(let error): return "Decoding error: \(error.localizedDescription)"
-            case .cacheExpired: return "Cache expired"
-            case .unauthorized: return "Unauthorized access"
-            }
-        }
-    }
-    
     // MARK: - Cache
     
     private struct CachedData<T> {
@@ -262,7 +239,6 @@ class ProductService: NSObject, ObservableObject {
 // MARK: - Publisher Extensions
 
 extension Publisher {
-    /// Advanced Pattern: Exponential backoff retry
     func retryWithBackoff(maxRetries: Int, delay: TimeInterval) -> AnyPublisher<Output, Error> {
         self.catch { error -> AnyPublisher<Output, Error> in
             guard maxRetries > 0 else {
