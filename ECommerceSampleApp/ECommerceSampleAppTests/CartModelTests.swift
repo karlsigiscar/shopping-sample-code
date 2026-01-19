@@ -23,8 +23,19 @@ struct CartModelTests {
                                name: String = "T-Shirt",
                                description: String = "Amazing Mando T-shirt with Grogu",
                                image: String = "https://placehold.co/600x400/EEE/31343C",
-                               price: Double = 29.99) -> ProductModel {
-        ProductModel(id: id, sku: sku, name: name, description: description, image: image, price: price) // adjust init to match your real ProductModel
+                               price: Double = 29.99,
+                               discountInPercent: Int = 10,
+                               membersOnly: Bool = false,
+                               category: String = "Menswear") -> ProductModel {
+        ProductModel(id: id,
+                     sku: sku,
+                     name: name,
+                     description: description,
+                     image: image,
+                     price: price,
+                     discountInPercent: discountInPercent,
+                     membersOnly: membersOnly,
+                     category: category)
     }
     
     // MARK: - Adding products

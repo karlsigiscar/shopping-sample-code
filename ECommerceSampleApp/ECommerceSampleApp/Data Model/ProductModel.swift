@@ -19,7 +19,8 @@ struct ProductModel: Identifiable, Sendable, Decodable {
     public var membersOnly: Bool
     public var category: String
 
-    init(id: String, sku: String,
+    init(id: String,
+         sku: String,
          name: String,
          description: String,
          image: String,
